@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>NerdBook</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Simone Pili">
+        <meta name="keywords" content ="nerdbook, social network, nuovi amici">
+        <meta name="lang" content="it">
+    </head>
+    
+    <body>
+        <header>
+            <h1>NerdBook</h1>
+        </header>
+        
+        <nav>
+            <a href="descrizione.html">Descrizione</a>
+            <a href="login.html">LogIn</a>
+        </nav>
+        
+        <div id="title">
+            <h2>Pagina di registrazione</h2>
+        </div>
+        
+        <div id="formTitle">
+            <h3>Form di registrazione</h3>
+        </div>
+        
+        <div id="signUpForm">
+            <form action="#" method="get">
+                <label for="signName">Inserisci il tuo nome:</label>
+                <input type="text" name="signName" id="signName" value="Nome"/>
+                <br/>
+                <label for="signSurname">Inserisci il tuo cognome:</label>
+                <input type="text" name="signSurname" id="signSurname" value="Cognome"/>
+                <br/>
+                <label for="proPicURL">Inserisci un URL per l'immagine del profilo:</label>
+                <input type="url" name="proPicURL" id="proPicURL" />
+                <br/>
+                <label for="userQuote">Inserisci una frase di presentazione:</label>
+                <textarea rows="5" cols="25" name="userQuote" id="userQuote">Frase di presentazione</textarea>
+                <br/>
+                <label for="birthDate">Inserisci la data di nascita:</label>
+                <input type="date" name="birthDate" id="birthDate" />
+                <br/>
+                <label for="signPwd">Inserisci la password:</label>
+                <input type="password" name="signPwd" id="signPwd" value="password"/>
+                <br/>
+                <label for="confirmPwd">Conferma la password:</label>
+                <input type="password" name="confirmPwd" id="confirmPwd" value="password"/>
+                <br/>
+                <input type="submit" value="Registrati ora" />
+            </form>
+        </div>        
+    </body>
+</html>
