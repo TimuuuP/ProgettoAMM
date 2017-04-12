@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Index-->
+<!--Login-->
 <html>
     <head>
         <title>NerdBook</title>
@@ -9,23 +9,20 @@
         <meta name="keywords" content ="nerdbook, social network, nuovi amici">
         <meta name="lang" content="it">
         <link rel="stylesheet" type="text/css"
-              href="./M2/style.css" media="screen">
+              href="../M2/style.css" media="screen">
     </head>
     
     <body>
         <div id="page">
 
-                <nav class="topNav">
-                    <a class="header" href="index.html">NerdBook</a>
-                    <a href="./M2/descrizione.html">Descrizione</a>
-                    <a href="./M2/profilo.html">Profilo</a>
-                    <a href="./M2/bacheca.html">Bacheca</a>
-                    <a href="./M2/login.html">Login</a>
-                    <!--<a href="./M1/profilo.html" id="navLogName">Pyrex</a>
-                    <a href="./M1/login.html" id="navLogOut">Logout</a>-->
-                </nav>
-          
-           
+            <nav class="topNav">
+                <a class="header" href="../index.html">NerdBook</a>
+                <a href="descrizione.html">Descrizione</a>
+                <a href="profilo.html">Profilo</a>
+                <a href="bacheca.html">Bacheca</a>
+                <a href="login.html" class="active">Login</a>
+            </nav>
+
             <div id="sideBarL">
                 <ul>
                     <li id="sideBarPeople">
@@ -49,14 +46,18 @@
                 </ul>
             </div>
             
-            
-
-            <div id="home" class="whiteDiv">
-                <p>THIS IS THE INDEX PAGE</p>
+          
+            <div id="loginForm" class="whiteDiv">
+                <form action="#" method="post">
+                    <h2>Pagina di Login</h2>
+                    <label for="logName">Inserisci il tuo nome:</label>
+                    <input type="text" name="logName" id="logName" value="Nome" />
+                    <label for="logPwd">Inserisci la password:</label>
+                    <input type="password" name="logPwd" id="logPwd" value="password" />
+                    <input type="submit" value="LogIn" />
+                </form>
             </div>
-            
             <div style="clear: both; width: 0px; height: 0px;"></div>
-            
             <footer>
                 <p>
                 <a href="http://jigsaw.w3.org/css-validator/check/referer">
@@ -66,7 +67,6 @@
                     </a>
                 </p>
             </footer>
-        
         </div>
-    </body>    
+    </body>
 </html>

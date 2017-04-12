@@ -1,0 +1,407 @@
+/*Stili base*/
+body{
+    background-color: #e6e6e6;
+    font: 18px/22px "Open Sans", Arial, sans-serif;
+    
+}
+
+h1, h2{
+    color: #ff66b3;
+}
+
+h3{
+    color: #cc0066;
+    font-weight: lighter;
+}
+
+a:link, a:visited{
+    color: #ff66b3;
+}
+
+/* mouse over link */
+a:hover{
+    color: #b089ff;
+}
+
+#proForm input, #proForm textarea{
+    margin-bottom: 5px;
+}
+
+#loginForm, #proForm{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+label::after, label::before { 
+    content: '\A';
+    white-space: pre; 
+}
+
+label{
+    margin-bottom: 8px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+input, textarea {
+    background-color: #f7eff5;
+    border: 1px solid #ff66b3;
+    border-radius: 6px;
+    outline: none;
+    padding: 8px;
+    width: 50%;
+    margin: auto;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus{
+    background-color: #ffcce6;
+    border: 1px solid #ff66b3;
+    border-radius: 6px;
+    outline: none;
+    padding: 8px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(255,102,179,0.5);
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=submit], input[type=button]{
+    background-color: #ff66b3;
+    border: none;
+    color: white;
+    font-size: 14px;
+    width: 50%;
+    margin: auto;
+    margin-top: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=button]:hover{
+    background-color: #ff66b3;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    width: 50%;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 16px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px){
+    #page {  
+         padding-left: 10%;
+         padding-right: 10%;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 30px;
+         margin-bottom:30px;
+
+     }
+     
+     footer{
+        font: 18px/20px "Open Sans", Arial, sans-serif;
+        background-color: #232323;
+        padding: 5px;
+        color: #ff66b3;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        text-align: center;
+    }
+
+     /* sfondo barra di navigazione */
+     .topNav{
+         background-color: #ff66b3;
+         overflow: hidden;
+         box-shadow: 0 0 10px rgba(0,0,0,0.5);
+     }
+
+     /* stile dei link della barra di navigazione */
+     .topNav a{
+         float: left;
+         display: block;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 18px 16px;
+         text-decoration: none;
+         font-size: 17px;
+     }
+
+     /* cambio colore con passaggio mouse */
+     .topNav a:hover:not(.header){
+         background-color: #ffb3d9;
+         color: black;
+     }
+     
+     .topNav a.header{
+         font-weight: bold;
+         color: #ff66b3;
+         background-color: #232323;
+     }
+
+     /* colore del link attivo #ff66b3*/
+     .topNav a.active{
+         background-color: #ffb3d9;
+         color: white;
+     }
+
+     #sideBarL{
+         /*display: inline-block;*/
+         float: left;
+         background-color: #ffffff;
+         width: 150px;
+         margin-top: 15px;
+         margin-bottom: 15px;
+         padding-left: 15px;
+         padding-right: 15px;
+         box-shadow: 0 0 10px rgba(0,0,0,0.5);
+     }
+
+     #sideBarL ul{
+         color: black;
+         list-style: none;
+         padding-left: 5px;
+         margin-top: 0px;
+         margin-left: 0px;
+     }
+     
+     #sideBarL ul li{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+     }
+
+    .whiteDiv, .posts{
+         background-color: white;
+         margin-left: 200px;
+         margin-top: 15px;
+         margin-bottom: 15px;
+         padding: 10px;
+         box-shadow: 0 0 10px rgba(0,0,0,0.5);
+     }
+
+     .posts img{
+         max-width: 400px;
+         max-height: 400px;
+     }
+
+     .posts h3{
+         color: #ff66b3;
+         margin-left: 75px;
+     }
+
+     .posts p{
+         margin-top: 50px;
+     }
+
+     .profilePic img{
+         width: 64px;
+         height: 64px;
+         float: left;
+     } 
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+    body{
+        font: 16px/22px "Open Sans", Arial, sans-serif;
+    }
+    
+    #page {  
+         padding-left: 5%;
+         padding-right: 5%;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 20px;
+         margin-bottom:20px;
+
+     }
+     
+    footer{
+        font: 16px/16px "Open Sans", Arial, sans-serif;
+        background-color: #232323;
+        padding: 5px;
+        color: #ff66b3;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        text-align: center;
+    }
+
+     /* sfondo barra di navigazione */
+     .topNav{
+         background-color: #ff66b3;
+         overflow: hidden;
+         box-shadow: 0 0 10px rgba(0,0,0,0.5);
+         
+     }
+
+     /* stile dei link della barra di navigazione */
+     .topNav a{
+         float: left;
+         display: block;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 8px;
+         text-decoration: none;
+         font-size: 14px;
+         
+     }
+
+     /* cambio colore con passaggio mouse */
+     .topNav a:hover:not(.header){
+         background-color: #ffb3d9;
+         color: black;
+     }
+     
+     .topNav a.header{
+         font-weight: bold;
+         color: #ff66b3;
+         background-color: #232323;
+     }
+
+     /* colore del link attivo #ff66b3*/
+     .topNav a.active{
+         background-color: #ffb3d9;
+         color: white;
+     }
+
+     #sideBarL{
+         display: none;
+     }
+     
+     .whiteDiv, .posts{
+         background-color: white;
+         
+         margin-top: 15px;
+         margin-bottom: 15px;
+         padding: 10px;
+         box-shadow: 0 0 10px rgba(0,0,0,0.5);
+     }
+
+     .posts img{
+         max-width: 150px;
+         max-height: 300px;
+     }
+
+     .posts h3{
+         color: #ff66b3;
+         margin-left: 75px;
+     }
+
+     .posts p{
+         margin-top: 35px;
+     }
+
+     .profilePic img{
+         width: 64px;
+         height: 64px;
+         float: left;
+     } 
+}
+
+@media only screen and (max-width: 480px){
+    body{
+        font: 14px/16px "Open Sans", Arial, sans-serif;
+    }
+    
+    #page {  
+         width: 100%;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 20px;
+         margin-bottom:20px;
+     }
+     
+    footer{
+        font: 16px/16px "Open Sans", Arial, sans-serif;
+        background-color: #232323;
+        padding: 5px;
+        color: #ff66b3;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        text-align: center;
+    }
+
+     /* sfondo barra di navigazione */
+     .topNav{
+         background-color: #ff66b3;
+         overflow: hidden;
+         box-shadow: 0 0 10px rgba(0,0,0,0.5);
+         width: 100%;
+     }
+
+     /* stile dei link della barra di navigazione */
+     .topNav a{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 8px 8px;
+        text-decoration: none;
+        font-size: 12px;
+     }
+     
+     
+     .topNav .header{
+         float: none;
+         font-size: 18px;
+     }
+
+     /* cambio colore con passaggio mouse */
+     .topNav a:hover:not(.header){
+         background-color: #ffb3d9;
+         color: black;
+     }
+     
+     .topNav a.header{
+         font-weight: bold;
+         color: #ff66b3;
+         background-color: #232323;
+     }
+
+     /* colore del link attivo #ff66b3*/
+     .topNav a.active{
+         background-color: #ffb3d9;
+         color: white;
+     }
+
+     #sideBarL{
+         display: none;
+     }
+     
+     .whiteDiv, .posts{
+         background-color: white;
+         margin-top: 15px;
+         margin-bottom: 15px;
+         padding: 10px;
+         box-shadow: 0 0 10px rgba(0,0,0,0.5);
+     }
+
+     .posts img{
+         max-width: 200px;
+         max-height: 200px;
+     }
+
+     .posts h3{
+         color: #ff66b3;
+         margin-left: 75px;
+     }
+
+     .posts p{
+         margin-top: 50px;
+     }
+
+     .profilePic img{
+         width: 64px;
+         height: 64px;
+         float: left;
+     } 
+}
+
+
+
+/**/
+
